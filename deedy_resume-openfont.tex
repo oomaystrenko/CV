@@ -1,0 +1,229 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Olesya}{Maystrenko}{ 
+\urlstyle{same}{Date of birth: 20/05/1999\\}
+\href{mailto:oomaystrenko@edu.hse.ru}{oomaystrenko@edu.hse.ru} | + 7 (917) 349-87-06
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{2017-2021 \\ Higher School \\ of Economics (HSE)}
+\descript{Faculty of Economic Sciences \\ Economics, Research track}
+\location{Moscow, Russia \\ Minor: Data mining \\ GPA: 8.92/10 (Top 15\%)}
+\sectionsep
+
+
+\subsection{2006-2017 \\ Gymnasium \№39 \\ UNESCO Associated School}
+\descript{Social and Economic Sciences}
+\location{Ufa, Russia \\  GPA: 5.0 / 5.0 (Gold medal)}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Facebook://  \href{https://web.facebook.com/olesya.maystrenko.1999}{\custombold{olesya.maystrenko.1999}} \\
+VK://  \href{https://vk.com/maystrenko_olesya}{\custombold{maystrenko\_olesya}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Languages}
+\descript{Russian (C2) \\
+English (B2) \\
+Bashkir, Tatar (A2) \\
+French (A1)}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Hard Skills}
+\descript{MS Office \textbullet{} Python \textbullet{} \LaTeX \\ Pascal  \textbullet{} VBA \textbullet{} R\\}
+\subsection{\\Soft Skills}
+\descript{Quick Study \textbullet{} Team-worker  Prompt \textbullet{} Willing \textbullet{} Motivated Detail-oriented \textbullet{} Hard-working  Communicative}
+\sectionsep
+
+\section{Interests}
+Machine learning \\
+Neuroeconomics \\
+Horse-riding \\
+Swimming \\
+Piano
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Antego}
+\descript{| Project manager (Offcite Economics School)}
+\location{Sep 2018 - Aug 2019 | Moscow, Russia}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Coordination of the project \item Preparation of the financial plan \item Search for contractors \item SMM, Communication with children and their parents \item Transfer organization
+\end{tightemize}
+\sectionsep
+
+\runsubsection{School Olympiads}
+\descript{| Jury}
+\location{April 2018 – April 2019 | Moscow, Russia}
+\begin{tightemize}
+\item HSE school olympiad "Vysshaya proba" (subject: economics) (2019) \item Moscow school olympiad (subject: economics) (2019) \item Economics olympiad (trial tour from Association of Olympiad winners) (2018, 2019)\end{tightemize}
+\sectionsep
+
+\runsubsection{Summer Economics school "I Love Economics - 2018"}
+\descript{| Project Manager  }
+\location{Aug 2018 | Moscow, Russia}
+\sectionsep
+
+\runsubsection{OZON}
+\descript{| Import and Export Department Intern }
+\location{June 2018 – Aug 2018 | Moscow, Russia}
+\begin{tightemize}
+\item Analytics of the prices for imported goods \item Communication with Chinese partners \item Preparation of the launch of the OZON Marketplace\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Volunteership}
+\location{\\ \\ }
+\begin{tabular}{rll}
+2018    &  The first International Economics Olympiad (Moscow, Russia) \\
+2018   & International conference "eLearning Stakeholders and Researchers Summit" \\
+2018 & International Workshop on Competition, Regulation and
+Procurement \\
+2018  & Moscow International Education Fair
+\end{tabular}
+\sectionsep
+
+\section{Research\&Tuition} 
+
+\begin{tabular}{rll}
+2019 	& Accounting Teaching Assistant\\
+2019   & Coursework "Criteria for recognition and measurement of intangible assets"\\
+2018   &  Math Teaching Assistant\\
+2018   &  Personal tutor in math and accounting\\
+2018   &  IFRS Research about Yandex
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards\&Summer Schools} 
+\begin{tabular}{rll}
+2019	     & Prizewinner  & "I am a Professional" - Yandex Olympiad (economics,finance - 1\textsuperscript{st} tour)\\
+2019         & Participant  & Unilever Future Leaders' League 2019 (case-championship)\\
+2018	     & Prizewinner  & "I am a Professional" - Yandex Olympiad (economics - 1\textsuperscript{st} tour)\\
+2018	     & 2\textsuperscript{nd} place  & Business quest from Phoenix Case School\\
+2017	     & Winner  & Economics and Math School Olympiads\\
+2016	     & Participant  & International Children's Camp "Artek" (program: "Talanted children")\\
+2016         & Participant &Summer Economics School "I Love Economics - 2016" (GPA: 8/10)
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{minipage} 
+\end{document}
